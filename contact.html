@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@100;200;300;400;500;600&display=swap" rel="stylesheet" />
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="css/contact-style.css" />
+    <!-- jQuery CDN Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js" defer></script>
+    <!-- jQuery Validation Plagin -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js" defer></script>
+    <!-- JS File -->
+    <script src="index.js" defer></script>
+    <title>Frontend Mentor</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="nav-bar">
+          <div class="nav-box">
+            <a class="nav-brand" href="index.html">
+              <img class="logo-nav" src="images/logo.svg" alt="logo" />
+            </a>
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+
+            <ul class="nav-menu-hidden">
+              <li class="nav-item">
+                <a class="nav-brand" href="index.html">
+                  <img class="white-logo" src="images/logo-white.svg" alt="logo" />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li>
+                <button class="nav-button-hidden">Schedule a Demo</button>
+              </li>
+            </ul>
+          </div>
+
+          <button class="nav-button">Schedule a Demo</button>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+        <h1>Submit a help request and we'll get in touch shortly.</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="main-form">
+        <div class="container">
+          <article class="flex-box">
+            <div class="form-box">
+              <form id="submit-form" action="" method="post">
+                <p>
+                  <label for="name">Name</label>
+                  <input type="text" name="Name" id="name" required />
+                </p>
+
+                <p>
+                  <label for="email">Email</label>
+                  <input type="email" name="Email" id="email" required />
+                </p>
+
+                <p>
+                  <label for="company-name">Company Name</label>
+                  <input type="text" name="CompanyName" id="company-name" required />
+                </p>
+
+                <p>
+                  <label for="title">Title</label>
+                  <input type="text" name="Title" id="title" required />
+                </p>
+
+                <p>
+                  <label for="message">Message</label>
+                  <textarea name="Message" id="message" cols="20" rows="5" required></textarea>
+                </p>
+
+                <p class="inline-block">
+                  <input type="checkbox" id="checkbox" checked />
+                  <label for="checkbox">Stay up-to-date with company announcements and updates to our API</label>
+                </p>
+
+                <p>
+                  <input type="submit" value="Submit" id="submit-btn" />
+                </p>
+              </form>
+            </div>
+
+            <div class="content-box">
+              <div class="heading">
+                <h2>Join the thousands of innovators already building with us</h2>
+              </div>
+
+              <div class="img-box">
+                <div class="row">
+                  <img class="logo" src="images/tesla.svg" alt="tesla" />
+                  <img class="logo" src="images/microsoft.svg" alt="microsoft" />
+                  <img class="logo" src="images/hewlett-packard.svg" alt="hewlet-packard" />
+                </div>
+                <div class="row">
+                  <img class="logo" src="images/oracle.svg" alt="oracle" />
+                  <img class="logo" src="images/google.svg" alt="google" />
+                  <img class="logo" src="images/nvidia.svg" alt="nvidia" />
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="second-form-section">
+        <div class="container">
+          <article class="flex-box">
+            <h2 class="form-heading">Ready to start?</h2>
+            <form action="" class="bottom-form form">
+              <input type="email" name="Email" class="bottom-input-email" placeholder="Enter email address" required />
+              <input type="submit" value="Schedule a Demo" class="bottom-form-btn form-btn" />
+            </form>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <nav class="nav-bar">
+          <div class="nav-box">
+            <a class="nav-brand" href="index.html">
+              <img src="images/logo-white.svg" alt="logo" />
+            </a>
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav-footer-link">
+            <a href="https://www.frontendmentor.io/"><img src="images/facebook.svg" alt="icon" /></a>
+            <a href="https://www.frontendmentor.io/"><img src="images/twitter.svg" alt="icon" /></a>
+            <a href="https://www.frontendmentor.io/"><img src="images/linkedin.svg" alt="icon" /></a>
+          </div>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
